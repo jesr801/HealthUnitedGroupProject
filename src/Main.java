@@ -1,14 +1,12 @@
 public class Main {
     public static void main(String[] args) {
+        System.out.println("deez");
 
-        ERStaff erStaff = new ERStaff();
-        Nurse nurse = new Nurse();
-        Doctor doctor = new Doctor();
-        BStaff bStaff = new BStaff();
+        Nurse nurse = new Nurse("John Doe", "password");
 
-        System.out.println(erStaff);
+        Doctor doctor = new Doctor("Jane Doe", "password");
+
         System.out.println(nurse);
         System.out.println(doctor);
-        System.out.println(bStaff);
     }
 }

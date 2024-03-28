@@ -1,13 +1,19 @@
 import java.util.Date;
 
-class ERStaff {
+class ERStaff extends User{
 
-    public void CreatePatient(String name, Date dateOfBirth, String address, String EContact,
-                              Date careDate, Boolean admitted, String ss)
+    public ERStaff(String username, String password)
     {
+        super(username, password);
     }
 
-    public void EditPatientInfo(){}
+    public void CreatePatient(String patientName, String socialSecurity, Date dateOfBirth, String address,
+                              String eContact, Date careDate, Boolean admitted)
+    {
+        Patient patient = new Patient(patientName, socialSecurity, dateOfBirth, address, eContact, careDate, admitted);
+    }
+
+    public void EditPatientInfo(Patient patient, String field, String edit){}
 
     @Override
     public String toString()

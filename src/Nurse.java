@@ -1,4 +1,9 @@
-class Nurse extends ERStaff{
+class Nurse extends User{
+
+    public Nurse(String username, String password)
+    {
+        super(username, password);
+    }
 
     @Override
     public String toString()
