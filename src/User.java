@@ -8,6 +8,7 @@ abstract class User {
         this.password = password;
     }
 
+
     public void setUsername(String user) {
         username = user;
     }
@@ -31,5 +32,9 @@ abstract class User {
 
     public boolean login(String username, String password) {
         return this.username.equals(username) && this.password.equals(password);
+    }
+
+    public void logOff() {
+        System.out.println(this.username + " logged off successfully.");
     }
 }

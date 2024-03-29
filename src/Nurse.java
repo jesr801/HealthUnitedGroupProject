@@ -5,6 +5,11 @@ class Nurse extends User{
         super(username, password);
     }
 
+    public String orderTest(Patient patient)
+    {
+        return null;
+    }
+
     @Override
     public String toString()
     {
