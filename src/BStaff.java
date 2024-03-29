@@ -5,11 +5,12 @@ class BStaff extends User{
         super(username, password);
     }
 
-    public String prepareBill()
-    {
-        return null;
-    }
+    public int calcuateBill(){
 
+    }
+    public String generateBill(){
+
+    }
     @Override
     public String toString()
     {
