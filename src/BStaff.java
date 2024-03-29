@@ -6,10 +6,10 @@ class BStaff extends User{
     }
 
     public int calcuateBill(){
-
+        return 0;
     }
     public String generateBill(){
-
+        return null;
     }
     @Override
     public String toString()
