@@ -7,10 +7,10 @@ class ERStaff extends User{
         super(username, password);
     }
 
-    public void CreatePatient(String patientName, String socialSecurity, Date dateOfBirth, String address,
+    public Patient CreatePatient(String patientName, String socialSecurity, Date dateOfBirth, String address,
                               String eContact, Date careDate, Boolean admitted)
     {
-        Patient patient = new Patient(patientName, socialSecurity, dateOfBirth, address, eContact, careDate, admitted);
+        return new Patient(patientName, socialSecurity, dateOfBirth, address, eContact, careDate, admitted);
     }
 
     public void EditPatientInfo(Patient patient, String field, String edit){
