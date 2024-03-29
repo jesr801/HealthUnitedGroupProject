@@ -5,6 +5,12 @@ class BStaff extends User{
         super(username, password);
     }
 
+    public int calcuateBill(){
+        
+    }
+    public String generateBill(){
+        
+    }
     @Override
     public String toString()
     {
