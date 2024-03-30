@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MainMenu">
+  <grid id="27dc6" binding="employeeMainMenu" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none">
+      <font/>
+    </border>
+    <children>
+      <tabbedpane id="73b51" binding="patientSearch">
+        <constraints/>
+        <properties>
+          <name value="Patient Search "/>
+          <tabLayoutPolicy value="1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="dedea" binding="mainMenu" layout-manager="CardLayout" hgap="0" vgap="0">
+            <constraints>
+              <tabbedpane title="Patient Search"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <tabbedpane id="12cd5" binding="NewPatient">
+            <constraints>
+              <tabbedpane title="New Patient"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </tabbedpane>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>
