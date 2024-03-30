@@ -6,8 +6,11 @@ class Patient{
     private Date dateOfBirth, careDate;
     private Boolean admitted;
 
-    private Boolean abnormalRedBlood, abnormalWhiteBlood, abnormalLiver , abnormalRenalFunc, abnormalElectrolyte,
-            abnormalXRay, abnormalCT, abnormalMRI = false;
+    private int numberOfTreatments = 0;
+
+    private Boolean abnormalRedBlood = false, abnormalWhiteBlood = false, abnormalLiver = false,
+            abnormalRenalFunc = false, abnormalElectrolyte = false, abnormalXRay = false,
+            abnormalCT = false, abnormalMRI = false;
 
     public Patient(String patientName, String socialSecurity, Date dateOfBirth, String address, String eContact,
                    Date careDate, Boolean admitted)
@@ -148,6 +151,14 @@ class Patient{
 
     public String getSocialSecurity() {
         return socialSecurity;
+    }
+
+    public void setNumberOfTreatments(int numberOfTreatments) {
+        this.numberOfTreatments = numberOfTreatments;
+    }
+
+    public int getNumberOfTreatments() {
+        return numberOfTreatments;
     }
 
     @Override

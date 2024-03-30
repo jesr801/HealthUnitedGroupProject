@@ -10,9 +10,15 @@ class Nurse extends User{
         return null;
     }
 
+    public String addComment(Patient patient)
+    {
+        return null;
+    }
+
     @Override
     public String toString()
     {
-        return ("Nurse String");
+        return "\nUsername: " + this.getUsername()
+                + "\nPassword: " + this.getPassword();
     }
 }
